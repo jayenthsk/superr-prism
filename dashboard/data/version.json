@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+  "freeze_date": "16 Nov 2026",
+  "git_hash": "31798a1",
+  "li_cap": 6,
+  "eligibility": {
+    "min_balls": 300,
+    "min_pressure_balls": 100,
+    "min_pressure_matches": 12,
+    "active_since": 2025
+  }
+}

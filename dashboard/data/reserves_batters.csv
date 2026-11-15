@@ -1,0 +1,4 @@
+rank,player_id,player_name,teams,comp_types_played,total_balls,pressure_balls,matches_with_pressure,prism,prism_p10,prism_p90,median_rank,rank_lo80,rank_hi80,p_top10,consistency_index,robust_share,robust_badge
+11,3125,Nicholas Pooran,"Lucknow Super Giants, West Indies, Sunrisers Hyderabad","IPL, T20I_full",1891,393,52,34.6499,15.1006,52.3521,16.0,6.0,39.0,0.27,0.6,0.6667,False
+12,6280,Harry Brook,"England, Sunrisers Hyderabad","IPL, T20I_full",832,135,22,36.6666,8.4811,62.9538,16.0,3.0,50.0,0.346,0.5714,0.6,False
+13,4722,Rashid Khan,"Afghanistan, Gujarat Titans","IPL, T20I_associate, T20I_full",486,155,42,36.0026,0.7506,69.3696,17.0,3.0,62.1,0.356,0.875,0.5333,False

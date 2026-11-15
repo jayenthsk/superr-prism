@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "superr-prism"
+version = "1.0.0"
+description = "PRISM, pressure-rated index of skill in moments, for SupeRR Selector Season 2"
+requires-python = ">=3.11"
+authors = [{name = "Jayenth S"}]
+
+[tool.setuptools]
+packages = ["common", "data_prep", "pressure", "player_ratings", "reliability",
+            "player_insights", "final_rankings", "dashboard"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+extend-exclude = ["*.ipynb", ".venv"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E402"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,11 @@
+rank,player_id,player_name,teams,comp_types_played,total_balls,pressure_balls,matches_with_pressure,prism,prism_p10,prism_p90,median_rank,rank_lo80,rank_hi80,p_top10,consistency_index,robust_share,robust_badge
+1,781,Sunil Narine,Kolkata Knight Riders,IPL,1482,280,27,43.0043,28.8408,57.8669,2.0,1.0,7.0,0.954,0.7895,0.9286,True
+2,830,Josh Hazlewood,"Royal Challengers Bengaluru, Australia","IPL, T20I_full",1368,362,36,35.0335,14.2145,56.7988,4.0,1.0,22.0,0.758,0.6667,1.0,True
+3,2933,Jasprit Bumrah,"Mumbai Indians, India","IPL, T20I_associate, T20I_full",1630,360,41,30.146,17.2246,41.6524,6.0,2.0,17.0,0.74,0.52,0.9286,True
+4,4722,Rashid Khan,"Gujarat Titans, Afghanistan","IPL, T20I_associate, T20I_full",2651,448,62,28.3253,11.4189,44.6247,8.0,2.0,26.0,0.608,0.6,0.9286,True
+5,7920,Nathan Ellis,"Australia, Punjab Kings, Chennai Super Kings","IPL, T20I_full",858,241,25,23.9747,10.4355,36.6916,10.0,3.0,29.0,0.502,0.625,0.7857,False
+6,6523,Blessing Muzarabani,"Zimbabwe, Kolkata Knight Riders","IPL, T20I_full",820,191,24,25.6157,8.6368,39.3245,10.0,3.0,30.0,0.512,0.4375,0.9286,True
+7,4219,Krunal Pandya,"Lucknow Super Giants, Royal Challengers Bengaluru",IPL,1227,221,22,24.3402,6.1162,43.787,10.0,2.0,36.1,0.516,0.6667,0.7857,False
+8,8661,Matheesha Pathirana,"Chennai Super Kings, Sri Lanka, Kolkata Knight Riders","IPL, T20I_full",1031,313,32,22.4669,4.9175,39.4869,12.0,3.0,38.0,0.456,0.5556,0.8571,True
+9,6256,Varun Chakravarthy,"Kolkata Knight Riders, India","IPL, T20I_associate, T20I_full",2080,374,37,21.7502,8.8784,34.3496,13.0,4.0,30.1,0.41,0.7143,0.9286,True
+10,4900,Wanindu Hasaranga,"Sri Lanka, Royal Challengers Bengaluru, Rajasthan Royals","IPL, T20I_associate, T20I_full",1950,388,44,18.379,7.1182,30.4888,15.0,6.0,34.0,0.292,0.4,0.2857,False

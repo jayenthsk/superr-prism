@@ -1,0 +1,19 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*/output/*.parquet
+*/output/*.pkl
+*/output/*.joblib
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+__MACOSX/
+~$*
+
+# Kept local, not published
+docs/
+report/
+CLAUDE.md
+data_prep/raw/

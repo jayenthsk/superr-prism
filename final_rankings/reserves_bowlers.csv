@@ -1,0 +1,4 @@
+rank,player_id,player_name,teams,comp_types_played,total_balls,pressure_balls,matches_with_pressure,prism,prism_p10,prism_p90,median_rank,rank_lo80,rank_hi80,p_top10,consistency_index,robust_share,robust_badge
+11,4373,Mustafizur Rahman,"Bangladesh, Delhi Capitals, Chennai Super Kings","IPL, T20I_associate, T20I_full",1498,276,46,18.1406,3.7844,33.2921,17.0,4.9,41.0,0.34,0.3478,0.3571,False
+12,7699,Abbas Afridi,"Pakistan, Pakistan A","Emerging, T20I_full",447,109,13,16.5022,2.8744,29.8551,17.0,6.0,42.0,0.288,0.4444,0.0714,False
+13,3644,Kuldeep Yadav,"Delhi Capitals, India","IPL, T20I_associate, T20I_full",1884,386,46,14.8632,-1.1468,29.3686,18.0,6.0,52.0,0.236,0.619,0.2857,False

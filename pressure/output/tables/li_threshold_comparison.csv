@@ -1,0 +1,6 @@
+check,share
+Chase balls with RRR 10 plus at WP under 0.1 or over 0.9,0.43951869765247137
+Chase balls with RRR 10 plus that are Low or Normal leverage,0.6642916125987968
+High leverage balls in overs 1 to 15,0.6558346402036147
+High leverage balls in innings 1,0.17487209810525234
+Death over balls that are High leverage,0.30614951860406614

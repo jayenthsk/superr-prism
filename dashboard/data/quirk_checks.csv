@@ -1,0 +1,21 @@
+quirk,check,value,note
+Q1,T20 label competitions,7.0,IPL 2022 to 2026 plus two emerging events
+Q2,"Bat runs only in runs column, extras separate",0.0,zero bat runs on wides
+Q3,Max legal balls per innings with other treated as no-ball,120.0,120 expected
+Q3,Innings above 120 legal balls if other were legal,150.0,other is a no-ball
+Q3,Mean bat runs on other extras,1.5606060606060606,batter scores off it like a no-ball
+Q4,Super over balls,38.0,kept apart
+Q5,Obstructing typo rows,2.0,normalised
+Q6,Run-outs of the non-striker,274.0,charged by dismissed id
+Q7,No result or abandoned matches,40.0,dropped
+Q7,Decided matches with revised overs or DLS,28.0,"excluded in v1, revised overs columns are held in balls"
+Q7,DLS results with no revised fields,4.0,caught by result text
+Q8,Distinct result wordings for wickets or runs,6.0,use win team id
+Q9,"Ball gaps valid for tempo, share",0.8345713162752053,5 to 240 seconds within an over
+Q9,Median valid gap seconds,37.0,about 37 expected
+Q10,Stroke filled share,0.9693630316568739,about 0.97
+Q10,Bowl speed non zero share,0.6126249384325295,about 0.61
+Q11,Names mapped to more than one ID,3.0,"Abdul Samad, Basil Hameed, Haider Ali"
+Q12,Ball batting order filled share,1.0,slot baselines
+Q13,IPL impact era matches,297.0,IPL from 2023
+Q14,Associate bowling side share of T20I balls,0.0718632144234296,about 0.07

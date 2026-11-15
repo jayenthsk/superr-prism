@@ -1,0 +1,7 @@
+file,rows,columns,missing_cells_pct
+ball_by_ball.csv,200999,33,11.555401979234933
+matches.csv,883,22,14.08421702872439
+competitions.csv,141,4,0.0
+teams.csv,353,3,0.0
+playing_eleven.csv,28381,9,10.183651817139012
+competition_team_player_mapping.csv,6413,6,0.0

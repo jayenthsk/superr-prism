@@ -1,0 +1,245 @@
+{
+  "cleaning": {
+    "raw_ball_rows": 200999,
+    "clean_ball_rows": 200999,
+    "matches": 883,
+    "exclusions": [
+      {
+        "exclusion": "No result or abandoned",
+        "matches": 40,
+        "balls": 1753
+      },
+      {
+        "exclusion": "DLS or revised overs, decided",
+        "matches": 28,
+        "balls": 4726
+      },
+      {
+        "exclusion": "Super over balls",
+        "matches": 6,
+        "balls": 38
+      },
+      {
+        "exclusion": "Kept for ratings and WP",
+        "matches": 815,
+        "balls": 194482
+      }
+    ],
+    "timestamp": "2026-11-14T14:54:47",
+    "git_hash": "31798a1"
+  },
+  "features": {
+    "rows": 200999,
+    "in_scope_rows": 194482,
+    "in_scope_matches": 815,
+    "valid_gap_share": 0.8345713162752053,
+    "timestamp": "2026-11-14T14:54:52",
+    "git_hash": "31798a1"
+  },
+  "wp_model": {
+    "metrics": [
+      {
+        "innings": 1,
+        "balls": 100736,
+        "auc": 0.6843608337471719,
+        "brier": 0.2239788309466354,
+        "log_loss": 0.6385918933757808,
+        "auc_raw": 0.6843608337471719,
+        "cal_slope": 1.0861934431688642,
+        "cal_intercept": 0.0003702760723514585
+      },
+      {
+        "innings": 2,
+        "balls": 92558,
+        "auc": 0.896088802196449,
+        "brier": 0.1306308106158607,
+        "log_loss": 0.4054604879699602,
+        "auc_raw": 0.8977878904348797,
+        "cal_slope": 0.9832843002027143,
+        "cal_intercept": 0.00011030034703440514
+      }
+    ],
+    "config": {
+      "model": "lightgbm",
+      "n_jobs": 4,
+      "folds": 5,
+      "calibrate": {
+        "1": "none",
+        "2": "platt"
+      },
+      "max_iter": 300,
+      "learning_rate": 0.06,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 80,
+      "venue_shrink_k": 8,
+      "grid": {
+        "runs_max": 330,
+        "svp_max": 360
+      },
+      "smooth": {
+        "balls": 1.5,
+        "runs": 2.0
+      },
+      "inn1_overrides": {
+        "learning_rate": 0.02,
+        "max_leaf_nodes": 7,
+        "min_samples_leaf": 2000,
+        "max_iter": 200
+      },
+      "targets": {
+        "inn2_auc": 0.88,
+        "inn2_brier": 0.14,
+        "slope_lo": 0.9,
+        "slope_hi": 1.1
+      }
+    },
+    "timestamp": "2026-11-14T14:57:05",
+    "git_hash": "31798a1"
+  },
+  "leverage": {
+    "p_low": 0.5219046465590929,
+    "p_high": 1.4436736893212108,
+    "p_extreme": 2.7625164698946687,
+    "mean_raw_li": 0.01172761753035659,
+    "cap": 6,
+    "timestamp": "2026-11-14T14:57:33",
+    "git_hash": "31798a1"
+  },
+  "tempo": {
+    "spearman_li_tempo": 0.012432909973709192,
+    "p_value": 5.432521166969389e-07,
+    "balls": 162393,
+    "median_gap_Extreme": 41.0,
+    "median_gap_High": 37.0,
+    "median_gap_Low": 37.0,
+    "median_gap_Normal": 37.0,
+    "revealed_share": 0.024038214333460164,
+    "revealed_overlap_with_high": 0.226524064171123,
+    "timestamp": "2026-11-14T14:57:36",
+    "git_hash": "31798a1"
+  },
+  "ratings": {
+    "k": [
+      {
+        "role": "bat",
+        "kN_boundary": 206.07050057980575,
+        "tau2_delta_boundary": 0.0002909342747663226,
+        "kD_boundary": 518.9994898616612,
+        "kN_dot": 222.1803316097292,
+        "tau2_delta_dot": 0.0003624490376426151,
+        "kD_dot": 596.7941707936227,
+        "kN_out": 481.18234483463004,
+        "tau2_delta_out": 0.00037636420042403784,
+        "kD_out": 121.92294964598524,
+        "kN_runs": 209.38735509862556,
+        "tau2_delta_runs": 0.002944588538177667,
+        "kD_runs": 1012.3812257286199
+      },
+      {
+        "role": "bowl",
+        "kN_boundary": 400.1616312653365,
+        "tau2_delta_boundary": 4.7497436250257784e-05,
+        "kD_boundary": 2000,
+        "kN_dot": 393.5008604693563,
+        "tau2_delta_dot": 0.0005911669872641296,
+        "kD_dot": 365.4950336122708,
+        "kN_out": 1488.1009178856332,
+        "tau2_delta_out": 0.00015664441819877243,
+        "kD_out": 300.0654867588995,
+        "kN_runs": 382.66099420156934,
+        "tau2_delta_runs": 0.0008715642510878016,
+        "kD_runs": 2000
+      }
+    ],
+    "eligibility": {
+      "min_balls": 300,
+      "min_pressure_balls": 100,
+      "min_pressure_matches": 12,
+      "active_since": 2025
+    },
+    "opposition_adjust": true,
+    "timestamp": "2026-11-14T15:01:05",
+    "git_hash": "31798a1"
+  },
+  "uncertainty": {
+    "B": 500,
+    "refit_k": false,
+    "split_half": {
+      "n_splits": 20,
+      "min_balls_each_half": 150
+    },
+    "timestamp": "2026-11-14T15:02:55",
+    "git_hash": "31798a1"
+  },
+  "consistency": {
+    "min_pressure_balls_per_match": 6,
+    "floor_share": 0.2,
+    "timestamp": "2026-11-14T15:02:58",
+    "git_hash": "31798a1"
+  },
+  "robustness": {
+    "variants": [
+      "Tier p75",
+      "Tier p85",
+      "LI cap 4",
+      "LI cap none",
+      "Knockout x1.25",
+      "No associate T20Is",
+      "IPL only",
+      "T20I only",
+      "No opposition adjustment",
+      "Recency half-life 2",
+      "Tempo pressure",
+      "Hard entry x1.2",
+      "Not requiring 2025 activity",
+      "Min pressure balls 60",
+      "Min pressure balls 150"
+    ],
+    "timestamp": "2026-11-14T15:03:18",
+    "git_hash": "31798a1"
+  },
+  "e1": {
+    "k": 30,
+    "timestamp": "2026-11-14T15:03:20",
+    "git_hash": "31798a1"
+  },
+  "e2": {
+    "players": 708,
+    "timestamp": "2026-11-14T15:03:25",
+    "git_hash": "31798a1"
+  },
+  "e3": {
+    "k": 30,
+    "hard_entry_share_of_innings": 0.6870066788099575,
+    "timestamp": "2026-11-14T15:03:25",
+    "git_hash": "31798a1"
+  },
+  "final_rankings": {
+    "batters": [
+      "Tim David",
+      "Vaibhav Sooryavanshi",
+      "Abhishek Sharma",
+      "Phil Salt",
+      "Shashank Singh",
+      "Romario Shepherd",
+      "Glenn Maxwell",
+      "Suryakumar Yadav",
+      "Rinku Singh",
+      "Heinrich Klaasen"
+    ],
+    "bowlers": [
+      "Sunil Narine",
+      "Josh Hazlewood",
+      "Jasprit Bumrah",
+      "Rashid Khan",
+      "Nathan Ellis",
+      "Blessing Muzarabani",
+      "Krunal Pandya",
+      "Matheesha Pathirana",
+      "Varun Chakravarthy",
+      "Wanindu Hasaranga"
+    ],
+    "timestamp": "2026-11-14T15:03:28",
+    "git_hash": "31798a1"
+  }
+}

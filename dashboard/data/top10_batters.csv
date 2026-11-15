@@ -1,0 +1,11 @@
+rank,player_id,player_name,teams,comp_types_played,total_balls,pressure_balls,matches_with_pressure,prism,prism_p10,prism_p90,median_rank,rank_lo80,rank_hi80,p_top10,consistency_index,robust_share,robust_badge
+1,6396,Tim David,"Australia, Mumbai Indians, Royal Challengers Bengaluru","IPL, T20I_associate, T20I_full",1154,331,53,70.3967,43.035,98.073,2.0,1.0,9.0,0.92,0.7273,1.0,True
+2,50284,Vaibhav Sooryavanshi,"Rajasthan Royals, India, India A","Emerging, IPL, T20I_full",659,103,14,68.3469,46.3957,87.6429,2.5,1.0,8.1,0.934,0.8889,0.6,False
+3,6281,Abhishek Sharma,"Sunrisers Hyderabad, India, India A","Emerging, IPL, T20I_associate, T20I_full",2250,321,40,52.9842,36.3287,67.0585,6.0,2.0,14.0,0.806,0.7826,0.9333,True
+4,5553,Phil Salt,"England, Royal Challengers Bengaluru, Kolkata Knight Riders, Delhi Capitals","IPL, T20I_full",1582,230,28,53.1963,31.3879,72.4638,6.0,2.0,19.0,0.754,0.6154,0.9333,True
+5,2756,Shashank Singh,"Punjab Kings, Sunrisers Hyderabad",IPL,555,126,22,48.292,22.7786,73.4712,7.0,2.0,28.1,0.66,0.8,0.6667,False
+6,6726,Romario Shepherd,"West Indies, Royal Challengers Bengaluru, Sunrisers Hyderabad, Mumbai Indians, Lucknow Super Giants","IPL, T20I_full",657,171,30,44.3748,23.4214,66.5932,9.0,3.0,26.1,0.56,0.6154,0.8667,True
+7,838,Glenn Maxwell,"Australia, Royal Challengers Bengaluru, Punjab Kings","IPL, T20I_full",903,194,31,40.4129,-5.6314,69.1548,14.0,2.0,72.2,0.424,0.5556,0.8667,True
+8,1699,Suryakumar Yadav,"India, Mumbai Indians","IPL, T20I_associate, T20I_full",2646,528,59,36.1629,18.9467,50.5587,15.0,7.0,33.0,0.276,0.6,0.8,True
+9,4708,Rinku Singh,"Kolkata Knight Riders, India","IPL, T20I_full",1230,257,40,36.8139,16.8889,52.9076,15.0,5.0,35.0,0.296,0.7692,0.4,False
+10,4260,Heinrich Klaasen,"Sunrisers Hyderabad, South Africa","IPL, T20I_full",1401,199,34,34.6399,15.6149,49.9851,16.0,6.0,36.0,0.274,0.9091,0.3333,False

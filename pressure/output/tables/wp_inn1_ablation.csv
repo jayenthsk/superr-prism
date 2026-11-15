@@ -1,0 +1,5 @@
+feature_set,oof_auc
+"score, wickets, balls, crr",0.6829228476950701
+plus raw venue index,0.6442679848917952
+score scaled by venue par,0.6859670415948227
+"par score without crr, used",0.6862225687396221

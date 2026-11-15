@@ -1,0 +1,291 @@
+role,variant,player_id
+bat,Tier p75,1699
+bat,Tier p75,2756
+bat,Tier p75,6726
+bat,Tier p75,838
+bat,Tier p75,6281
+bat,Tier p75,50284
+bat,Tier p75,5553
+bat,Tier p75,4722
+bat,Tier p75,3125
+bat,Tier p75,6396
+bat,Tier p85,1699
+bat,Tier p85,4260
+bat,Tier p85,6726
+bat,Tier p85,838
+bat,Tier p85,1318
+bat,Tier p85,6281
+bat,Tier p85,5553
+bat,Tier p85,4722
+bat,Tier p85,3125
+bat,Tier p85,6396
+bat,LI cap 4,1699
+bat,LI cap 4,2756
+bat,LI cap 4,4260
+bat,LI cap 4,6726
+bat,LI cap 4,6281
+bat,LI cap 4,50284
+bat,LI cap 4,5553
+bat,LI cap 4,4722
+bat,LI cap 4,3125
+bat,LI cap 4,6396
+bat,LI cap none,768
+bat,LI cap none,2756
+bat,LI cap none,4708
+bat,LI cap none,838
+bat,LI cap none,6280
+bat,LI cap none,6281
+bat,LI cap none,50284
+bat,LI cap none,5553
+bat,LI cap none,4722
+bat,LI cap none,6396
+bat,Knockout x1.25,1699
+bat,Knockout x1.25,2756
+bat,Knockout x1.25,6726
+bat,Knockout x1.25,838
+bat,Knockout x1.25,6280
+bat,Knockout x1.25,6281
+bat,Knockout x1.25,50284
+bat,Knockout x1.25,5553
+bat,Knockout x1.25,4722
+bat,Knockout x1.25,6396
+bat,No associate T20Is,1699
+bat,No associate T20Is,2756
+bat,No associate T20Is,4708
+bat,No associate T20Is,6726
+bat,No associate T20Is,838
+bat,No associate T20Is,6280
+bat,No associate T20Is,6281
+bat,No associate T20Is,5553
+bat,No associate T20Is,3125
+bat,No associate T20Is,6396
+bat,IPL only,1699
+bat,IPL only,4260
+bat,IPL only,2756
+bat,IPL only,8101
+bat,IPL only,6281
+bat,IPL only,4755
+bat,IPL only,3125
+bat,IPL only,6396
+bat,IPL only,20702
+bat,IPL only,3647
+bat,T20I only,768
+bat,T20I only,838
+bat,T20I only,6726
+bat,T20I only,6280
+bat,T20I only,5553
+bat,T20I only,818
+bat,T20I only,5939
+bat,T20I only,4853
+bat,T20I only,7897
+bat,T20I only,6396
+bat,No opposition adjustment,1699
+bat,No opposition adjustment,2756
+bat,No opposition adjustment,4708
+bat,No opposition adjustment,6726
+bat,No opposition adjustment,838
+bat,No opposition adjustment,6281
+bat,No opposition adjustment,50284
+bat,No opposition adjustment,5553
+bat,No opposition adjustment,3125
+bat,No opposition adjustment,6396
+bat,Recency half-life 2,1699
+bat,Recency half-life 2,6726
+bat,Recency half-life 2,838
+bat,Recency half-life 2,6280
+bat,Recency half-life 2,6281
+bat,Recency half-life 2,50284
+bat,Recency half-life 2,5553
+bat,Recency half-life 2,4722
+bat,Recency half-life 2,3125
+bat,Recency half-life 2,6396
+bat,Tempo pressure,1699
+bat,Tempo pressure,4260
+bat,Tempo pressure,6726
+bat,Tempo pressure,838
+bat,Tempo pressure,6280
+bat,Tempo pressure,6281
+bat,Tempo pressure,5553
+bat,Tempo pressure,4722
+bat,Tempo pressure,3125
+bat,Tempo pressure,6396
+bat,Hard entry x1.2,1699
+bat,Hard entry x1.2,2756
+bat,Hard entry x1.2,6726
+bat,Hard entry x1.2,838
+bat,Hard entry x1.2,6280
+bat,Hard entry x1.2,6281
+bat,Hard entry x1.2,50284
+bat,Hard entry x1.2,5553
+bat,Hard entry x1.2,3125
+bat,Hard entry x1.2,6396
+bat,Not requiring 2025 activity,2756
+bat,Not requiring 2025 activity,4708
+bat,Not requiring 2025 activity,6726
+bat,Not requiring 2025 activity,838
+bat,Not requiring 2025 activity,6280
+bat,Not requiring 2025 activity,6281
+bat,Not requiring 2025 activity,50284
+bat,Not requiring 2025 activity,143
+bat,Not requiring 2025 activity,5553
+bat,Not requiring 2025 activity,6396
+bat,Min pressure balls 60,1699
+bat,Min pressure balls 60,2756
+bat,Min pressure balls 60,4708
+bat,Min pressure balls 60,6726
+bat,Min pressure balls 60,838
+bat,Min pressure balls 60,6280
+bat,Min pressure balls 60,6281
+bat,Min pressure balls 60,50284
+bat,Min pressure balls 60,5553
+bat,Min pressure balls 60,6396
+bat,Min pressure balls 150,1699
+bat,Min pressure balls 150,4708
+bat,Min pressure balls 150,4260
+bat,Min pressure balls 150,6726
+bat,Min pressure balls 150,838
+bat,Min pressure balls 150,6281
+bat,Min pressure balls 150,5553
+bat,Min pressure balls 150,4722
+bat,Min pressure balls 150,3125
+bat,Min pressure balls 150,6396
+bowl,Tier p75,4219
+bowl,Tier p75,781
+bowl,Tier p75,6256
+bowl,Tier p75,7920
+bowl,Tier p75,4722
+bowl,Tier p75,2933
+bowl,Tier p75,34485
+bowl,Tier p75,8661
+bowl,Tier p75,6523
+bowl,Tier p75,830
+bowl,Tier p85,1612
+bowl,Tier p85,781
+bowl,Tier p85,6256
+bowl,Tier p85,7920
+bowl,Tier p85,4722
+bowl,Tier p85,6523
+bowl,Tier p85,2933
+bowl,Tier p85,8661
+bowl,Tier p85,4219
+bowl,Tier p85,830
+bowl,LI cap 4,781
+bowl,LI cap 4,6256
+bowl,LI cap 4,7920
+bowl,LI cap 4,4722
+bowl,LI cap 4,6523
+bowl,LI cap 4,2933
+bowl,LI cap 4,8661
+bowl,LI cap 4,4219
+bowl,LI cap 4,3644
+bowl,LI cap 4,830
+bowl,LI cap none,781
+bowl,LI cap none,6256
+bowl,LI cap none,4816
+bowl,LI cap none,4722
+bowl,LI cap none,6523
+bowl,LI cap none,2933
+bowl,LI cap none,8661
+bowl,LI cap none,4219
+bowl,LI cap none,3644
+bowl,LI cap none,830
+bowl,Knockout x1.25,4219
+bowl,Knockout x1.25,781
+bowl,Knockout x1.25,7920
+bowl,Knockout x1.25,6256
+bowl,Knockout x1.25,4722
+bowl,Knockout x1.25,2933
+bowl,Knockout x1.25,8661
+bowl,Knockout x1.25,4373
+bowl,Knockout x1.25,6523
+bowl,Knockout x1.25,830
+bowl,No associate T20Is,781
+bowl,No associate T20Is,7920
+bowl,No associate T20Is,6256
+bowl,No associate T20Is,4722
+bowl,No associate T20Is,6523
+bowl,No associate T20Is,6450
+bowl,No associate T20Is,2933
+bowl,No associate T20Is,8661
+bowl,No associate T20Is,4219
+bowl,No associate T20Is,830
+bowl,IPL only,781
+bowl,IPL only,6669
+bowl,IPL only,6256
+bowl,IPL only,4722
+bowl,IPL only,8661
+bowl,IPL only,2933
+bowl,IPL only,2261
+bowl,IPL only,4219
+bowl,IPL only,3644
+bowl,IPL only,830
+bowl,T20I only,4900
+bowl,T20I only,6256
+bowl,T20I only,7920
+bowl,T20I only,4722
+bowl,T20I only,6450
+bowl,T20I only,7699
+bowl,T20I only,4373
+bowl,T20I only,6523
+bowl,T20I only,3644
+bowl,T20I only,830
+bowl,No opposition adjustment,781
+bowl,No opposition adjustment,6256
+bowl,No opposition adjustment,7920
+bowl,No opposition adjustment,4722
+bowl,No opposition adjustment,6523
+bowl,No opposition adjustment,2933
+bowl,No opposition adjustment,8661
+bowl,No opposition adjustment,4373
+bowl,No opposition adjustment,4219
+bowl,No opposition adjustment,830
+bowl,Recency half-life 2,4641
+bowl,Recency half-life 2,58246
+bowl,Recency half-life 2,781
+bowl,Recency half-life 2,6256
+bowl,Recency half-life 2,7920
+bowl,Recency half-life 2,4722
+bowl,Recency half-life 2,4373
+bowl,Recency half-life 2,2933
+bowl,Recency half-life 2,6523
+bowl,Recency half-life 2,830
+bowl,Tempo pressure,5979
+bowl,Tempo pressure,360
+bowl,Tempo pressure,781
+bowl,Tempo pressure,305
+bowl,Tempo pressure,8661
+bowl,Tempo pressure,34485
+bowl,Tempo pressure,2933
+bowl,Tempo pressure,4373
+bowl,Tempo pressure,6523
+bowl,Tempo pressure,830
+bowl,Not requiring 2025 activity,4900
+bowl,Not requiring 2025 activity,4219
+bowl,Not requiring 2025 activity,781
+bowl,Not requiring 2025 activity,7920
+bowl,Not requiring 2025 activity,6256
+bowl,Not requiring 2025 activity,4722
+bowl,Not requiring 2025 activity,2933
+bowl,Not requiring 2025 activity,8661
+bowl,Not requiring 2025 activity,6523
+bowl,Not requiring 2025 activity,830
+bowl,Min pressure balls 60,4900
+bowl,Min pressure balls 60,4219
+bowl,Min pressure balls 60,781
+bowl,Min pressure balls 60,7920
+bowl,Min pressure balls 60,6256
+bowl,Min pressure balls 60,4722
+bowl,Min pressure balls 60,2933
+bowl,Min pressure balls 60,8661
+bowl,Min pressure balls 60,6523
+bowl,Min pressure balls 60,830
+bowl,Min pressure balls 150,4900
+bowl,Min pressure balls 150,4219
+bowl,Min pressure balls 150,781
+bowl,Min pressure balls 150,7920
+bowl,Min pressure balls 150,6256
+bowl,Min pressure balls 150,4722
+bowl,Min pressure balls 150,2933
+bowl,Min pressure balls 150,8661
+bowl,Min pressure balls 150,6523
+bowl,Min pressure balls 150,830

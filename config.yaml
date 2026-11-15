@@ -1,0 +1,101 @@
+# PRISM configuration, every threshold and seed lives here
+version: "1.0"
+freeze_date: "16 Nov 2026"
+seed: 42
+
+paths:
+  raw: data_prep/raw
+  data_prep: data_prep/output
+  pressure: pressure/output
+  player_ratings: player_ratings/output
+  reliability: reliability/output
+  player_insights: player_insights/output
+  final_rankings: final_rankings
+  dashboard_data: dashboard/data
+
+# IPL is every T20 event that is not an emerging event
+emerging_comp_names:
+  - Mens T20 Emerging Teams Asia Cup 2024
+  - Asia Cup Rising Stars 2025
+# Associate sides, matched on team name ignoring case
+associate_teams: [Canada, Hong Kong, Japan, Kuwait, Nepal, Netherlands, Oman, Scotland, Singapore, United Arab Emirates, UAE, USA, United States of America]
+impact_era_start: 2023
+
+legal_exclude_extras: [wide, Overstep, other]
+wide_noball_extras: [wide, Overstep, other]
+bowler_wicket_types: [Caught, Bowled, LBW, Stump, Hit Wicket]
+dismissal_normalise:
+  Obstracting the field: Obstructing the field
+
+exclude: {no_result: true, dls: true, super_over: true}
+phases: {PP: [1, 6], MID: [7, 15], DEATH: [16, 20]}
+caps: {balls_since_wkt: 12, batter_balls_faced: 30}
+
+# Timestamp gaps in seconds
+tempo: {gap_min: 5, gap_max: 240, revealed_z: 1.5}
+
+wp:
+  model: lightgbm
+  n_jobs: 4
+  folds: 5
+  # Isotonic overfits because balls cluster within matches, see wp_calibrator_comparison
+  calibrate: {1: none, 2: platt}
+  max_iter: 300
+  learning_rate: 0.06
+  max_leaf_nodes: 31
+  min_samples_leaf: 80
+  venue_shrink_k: 8
+  # Innings 1 is noisy and overfits, heavier regularisation keeps calibration slope near 1
+  # WP surface grid and smoothing in balls and runs, removes tree steps from leverage
+  grid: {runs_max: 330, svp_max: 360}
+  smooth: {balls: 1.5, runs: 2.0}
+  inn1_overrides: {learning_rate: 0.02, max_leaf_nodes: 7, min_samples_leaf: 2000, max_iter: 200}
+  targets: {inn2_auc: 0.88, inn2_brier: 0.14, slope_lo: 0.9, slope_hi: 1.1}
+
+li:
+  cap: 6
+  tiers: {low: 0.40, high: 0.80, extreme: 0.95}
+  wkt_buckets: [[0, 2], [3, 5], [6, 10]]
+
+modifiers: {knockout: 1.0, hard_entry_weight: 1.0}
+
+baseline:
+  folds: 5
+  max_iter: 200
+  learning_rate: 0.08
+  max_leaf_nodes: 31
+  min_samples_leaf: 200
+
+ratings:
+  k_delta_max: 2000
+  k_floor_tau2: 1.0e-7
+  opposition_adjust: true
+  recency_half_life: null
+  components: [boundary, dot, out, runs]
+
+eligibility: {min_balls: 300, min_pressure_balls: 100, min_pressure_matches: 12, active_since: 2025}
+eligibility_grid: [60, 100, 150]
+
+bootstrap: {B: 500, dev_B: 100, n_jobs: -1, refit_k: false}
+split_half: {n_splits: 20, min_balls_each_half: 150}
+consistency: {min_pressure_balls_per_match: 6, floor_share: 0.20}
+myths: {tight_over_runs: 4, streak_cap: 5}
+robustness: {badge_share: 0.80, tiers: [0.75, 0.80, 0.85], li_caps: [4, 6, null]}
+reserves: 3
+
+extras:
+  min_attempts_k: 30
+  hard_entry_balls: 10
+  hard_entry_wp: [0.2, 0.8]
+  hard_entry_weight: 1.2
+
+# Stroke groups and delivery groups, also used in the pressure validation
+stroke_groups:
+  aggressive: [Slog, Slog Sweep, PickUp, Reverse Sweep, Paddle Scoop, Reverse Paddle Scoop, Switch, UpperCut, Hook Shot, Paddle Sweep]
+  orthodox: [Pull shot, Cover Drive, Worked, Flick, Off Drive, Square Cut, On drive, Square drive, Steer, Straight Drive, Sweep Shot, Leg Glance, Inside out, Late Cut, Glance]
+  defensive: [Frontfoot defensive, Backfoot defensive, Defense, Push, Intentional Padding]
+delivery_groups:
+  yorker: [Yorker, Wide Yorker]
+  full_toss: [Full Toss, Beamer]
+  slower: [Slow Ball, Knuckle, Off Cutter, Leg Cut, Slow Bouncer]
+  bouncer: [Bouncer]
