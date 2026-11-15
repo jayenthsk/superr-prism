@@ -14,7 +14,6 @@ PALETTE = [BAT, BOWL, ACCENT, GREEN, PURPLE, NEUTRAL]
 ROLE_COL = {"bat": BAT, "bowl": BOWL}
 ROLE_FILE = {"bat": "batters", "bowl": "bowlers"}
 TIER_COLOURS = {"Low": "#F6DFC4", "Normal": "#E9AE6B", "High": "#C9661C", "Extreme": "#8A3500"}
-SOURCE = "Source: SupeRR data pack, IPL & T20I 2022-26. PRISM by Jayenth Saravanakumar."
 REPO_URL = "https://github.com/jayenthsk/superr-prism"
 AUTHOR = "Jayenth S"
 
@@ -43,7 +42,7 @@ def page(title: str) -> None:
 
 def footer() -> None:
     st.divider()
-    st.caption(SOURCE)
+    st.caption(f"PRISM by {AUTHOR}.")
 
 
 def style_fig(fig: go.Figure, title: str = "", height: int = 420) -> go.Figure:

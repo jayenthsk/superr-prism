@@ -59,7 +59,6 @@ def li_heatmap() -> plt.Figure:
     axes[0].set_ylabel("Runs needed")
     fig.colorbar(im, ax=axes, label="Leverage index, average ball 1")
     fig.suptitle("Chase leverage by balls left and runs needed", fontweight="bold")
-    fig.text(0.99, 0.005, style.SOURCE, ha="right", va="bottom", fontsize=7, color=style.NEUTRAL)
     fig.savefig(fig_path(S, "05_li_heatmap.png"), dpi=style.DPI, bbox_inches="tight")
     return fig
 

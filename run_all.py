@@ -2,8 +2,6 @@
 from __future__ import annotations
 
 import argparse
-import subprocess
-import sys
 import time
 from pathlib import Path
 
@@ -79,10 +77,17 @@ def run_notebooks() -> None:
         if not path.exists():
             print(f"[run_all] skip missing {nb}")
             continue
-        _step(f"notebook {nb}", lambda p=path: subprocess.run(
-            [sys.executable, "-m", "jupyter", "nbconvert", "--execute", "--to", "notebook",
-             "--inplace", "--ExecutePreprocessor.timeout=900", str(p)],
-            cwd=p.parent, check=True))
+        _step(f"notebook {nb}", lambda p=path: _execute(p))
+
+
+def _execute(path: Path) -> None:
+    # In-process kernel client, the jupyter launcher exe can be blocked by Windows app control
+    import nbformat
+    from nbclient import NotebookClient
+
+    nb = nbformat.read(path, as_version=4)
+    NotebookClient(nb, timeout=900, kernel_name="python3", resources={"metadata": {"path": str(path.parent)}}).execute()
+    nbformat.write(nb, path)
 
 
 def main() -> None:

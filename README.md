@@ -88,5 +88,3 @@ Folders follow the pipeline stages. Each one holds its own code, notebooks and o
 - Stroke and delivery-style tags come from analysts and differ a little between data providers. The E1 and E2 extras are diagnostic only.
 - Clutch effects barely repeat, so the ranking mostly rewards skill shown in high-stakes states. The robustness table shows how the lists move under 14–15 alternative choices.
 - Players with different IDs are never merged, even when they share a name; shared names carry a team tag.
-
-Source: SupeRR data pack, IPL & T20I 2022–26.

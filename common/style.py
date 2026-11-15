@@ -6,7 +6,6 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-SOURCE = "Source: SupeRR data pack, IPL & T20I 2022-26"
 BAT = "#E4007C"
 BOWL = "#254AA5"
 NEUTRAL = "#7A7A7A"
@@ -31,10 +30,8 @@ def apply() -> None:
     })
 
 
-def finish(fig, path=None, source: bool = True) -> None:
-    if source:
-        fig.text(0.99, 0.005, SOURCE, ha="right", va="bottom", fontsize=7, color=NEUTRAL)
-    fig.tight_layout(rect=(0, 0.03, 1, 1))
+def finish(fig, path=None) -> None:
+    fig.tight_layout()
     if path is not None:
         fig.savefig(path, dpi=DPI, bbox_inches="tight")
 
