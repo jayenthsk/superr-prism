@@ -6,7 +6,7 @@ PRISM ranks IPL and T20I batters and bowlers (2022–2026) by how much win proba
 
 **Author:** Jayenth S
 
-- **Dashboard:** `streamlit run dashboard/streamlit_app.py`, hosted link to follow
+- **Live dashboard:** https://superr-prism.streamlit.app
 
 ## The idea in four lines
 1. **Pressure is the stakes of the ball, not the scoreboard.** Every delivery gets a leverage index (LI): the expected absolute swing in win probability from that exact state. The top 20% of balls by LI are pressure balls.
@@ -70,21 +70,14 @@ Folders follow the pipeline stages. Each one holds its own code, notebooks and o
 | 2 | [pressure/](pressure/) | Win-probability model, smoothed WP surface, leverage index, pressure tiers, tempo | 04, 05 |
 | 3 | [player_ratings/](player_ratings/) | Context baseline, opposition adjustment, eligibility, PRISM | 06 |
 | 4 | [reliability/](reliability/) | Bootstrap, split-half reliability, consistency, robustness, myth tests | 07 |
-| 5 | [player_insights/](player_insights/) | E1 bowler execution, E2 shot-mix drift, E3 hard entries | 08 |
+| 5 | [player_insights/](player_insights/) | Bowler execution, shot-mix drift, hard entries | 08 |
 | 6 | [final_rankings/](final_rankings/) | Submission CSVs and results review | 09 |
 | 7 | [dashboard/](dashboard/) | Streamlit app, reads only `dashboard/data/` | |
 | shared | [common/](common/) | Config loader, path helpers, chart style | |
 
-## Dashboard deployment (Streamlit Community Cloud)
-1. Push this repo to GitHub as a public repository.
-2. On share.streamlit.io choose New app, then this repo, branch `main` and the file `dashboard/streamlit_app.py`.
-3. Under Advanced settings choose Python 3.12. The app installs the light [dashboard/requirements.txt](dashboard/requirements.txt).
-4. Open the URL in an incognito window to confirm no login is needed.
-5. Put the URL in this README.
-
 ## Limitations
 - First-innings win probability is hard to predict (AUC ≈ 0.68), so first-innings leverage is compressed. Only about 17% of pressure balls fall in the first innings.
 - Matches shortened by DLS or revised overs are excluded in this version.
-- Stroke and delivery-style tags come from analysts and differ a little between data providers. The E1 and E2 extras are diagnostic only.
+- Stroke and delivery-style tags come from analysts and differ a little between data providers. The execution and shot-mix extras are diagnostic only.
 - Clutch effects barely repeat, so the ranking mostly rewards skill shown in high-stakes states. The robustness table shows how the lists move under 14–15 alternative choices.
 - Players with different IDs are never merged, even when they share a name; shared names carry a team tag.
